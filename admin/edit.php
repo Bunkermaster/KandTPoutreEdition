@@ -1,7 +1,6 @@
 <?php
 require_once "../connect.php";
 if(isset($_POST['trololol'])) {
-    require_once "../connect.php";
     // on update!!!!
     $stmt = $pdo->query("UPDATE
 `page`
