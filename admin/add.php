@@ -21,8 +21,8 @@ VALUES
         <p><label for="slug">slug</label><br><input type="text" name="trololol[slug]"></p>
         <p><label for="h1">H1</label><br><input type="text" name="trololol[h1]"></p>
         <p><label for="nav-title">nav-title</label><br><input type="text" name="trololol[nav-title]"></p>
-        <p><label for="img-alt">slug</label><br><input type="text" name="trololol[img-alt]"></p>
-        <p><label for="img-src">slug</label><br><input type="text" name="trololol[img-src]"></p>
+        <p><label for="img-alt">Image Alt</label><br><input type="text" name="trololol[img-alt]"></p>
+        <p><label for="img-src">Image Source</label><br><input type="text" name="trololol[img-src]"></p>
         <p><label for="description">description</label><br><textarea name="trololol[description]" id="" cols="30" rows="10"></textarea></p>
         <p><input type="submit" value="Ajouter"></p>
     </form>

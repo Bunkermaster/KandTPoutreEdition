@@ -26,8 +26,8 @@ WHERE
         <p><label for="slug">slug</label><br><input type="text" name="trololol[slug]" value="<?=$row['slug']?>"></p>
         <p><label for="h1">H1</label><br><input type="text" name="trololol[h1]" value="<?=$row['h1']?>"></p>
         <p><label for="nav-title">nav-title</label><br><input type="text" name="trololol[nav-title]" value="<?=$row['nav-title']?>"></p>
-        <p><label for="img-alt">slug</label><br><input type="text" name="trololol[img-alt]" value="<?=$row['img-alt']?>"></p>
-        <p><label for="img-src">slug</label><br><input type="text" name="trololol[img-src]" value="<?=$row['img-src']?>"></p>
+        <p><label for="img-alt">Image alt</label><br><input type="text" name="trololol[img-alt]" value="<?=$row['img-alt']?>"></p>
+        <p><label for="img-src">Image Source</label><br><input type="text" name="trololol[img-src]" value="<?=$row['img-src']?>"></p>
         <p><label for="description">description</label><br><textarea name="trololol[description]" id="" cols="30" rows="10"><?=$row['slug']?></textarea></p>
         <p><input type="submit" value="Modifier"></p>
     </form>
