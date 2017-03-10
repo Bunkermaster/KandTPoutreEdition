@@ -28,7 +28,7 @@ WHERE
         <p><label for="nav-title">nav-title</label><br><input type="text" name="trololol[nav-title]" value="<?=$row['nav-title']?>"></p>
         <p><label for="img-alt">Image alt</label><br><input type="text" name="trololol[img-alt]" value="<?=$row['img-alt']?>"></p>
         <p><label for="img-src">Image Source</label><br><input type="text" name="trololol[img-src]" value="<?=$row['img-src']?>"></p>
-        <p><label for="description">description</label><br><textarea name="trololol[description]" id="" cols="30" rows="10"><?=$row['slug']?></textarea></p>
+        <p><label for="description">description</label><br><textarea name="trololol[description]" id="" cols="30" rows="10"><?=$row['description']?></textarea></p>
         <p><input type="submit" value="Modifier"></p>
     </form>
     <?php
