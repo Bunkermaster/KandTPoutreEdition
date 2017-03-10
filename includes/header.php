@@ -1,5 +1,6 @@
 <?php
 require_once 'functions.php';
+$stmt = $pdo->query("SELECT `slug`, `nav-title` FROM `page`;");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,10 +18,9 @@ require_once 'functions.php';
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li<?=isActive($targetPage, 'teletubbies')?>><a href="index.php">Teletubbies</a></li>
-                <li<?=isActive($targetPage, 'kittens')?>><a href="index.php?page=kittens">Kittens</a></li>
-                <li<?=isActive($targetPage, 'ironmaiden')?>><a href="index.php?page=ironmaiden">Iron Maiden</a></li>
-                <li<?=isActive($targetPage, 'chloe')?>><a href="index.php?page=chloe">Chlo&eacute;</a></li>
+                <?php while ($nav = $stmt->fetch(PDO::FETCH_ASSOC)):?>
+                <li<?=isActive($targetPage, $nav['slug'])?>><a href="index.php?page=<?=$nav['slug']?>"><?=$nav['nav-title']?></a></li>
+                <?php endwhile; ?>
             </ul>
         </div>
     </div>

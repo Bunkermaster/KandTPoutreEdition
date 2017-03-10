@@ -1,6 +1,6 @@
 <?php
 try {
-    $pdo = new PDO('mysql:host=localhost;dbname=kandt-2awd','root','root');
+    $pdo = new PDO('mysql:host=localhost;dbname=kandtpoutreedition','root','root');
 } catch(PDOException $exception) {
     die($exception->getMessage());
 }
